@@ -1,16 +1,1 @@
 
-Risk Level: HIGH 
-Vulnerability Detail: 
-Executive Summary: 
-Log in with the administrator’s user account During the security assessment , it was discovered that the admin login functionality is 
-vulnerable to SQL injection attacks. This vulnerability allows an attacker to manipulate SQL queries, potentially bypassing 
-authentication and gaining unauthorized access to the admin panel, which could lead to data breaches, data manipulation, and other 
-serious security incidents. 
-The vulnerability was identified through manual testing, where input parameters for the admin login form were tested with SQL injection 
-payloads. It was confirmed that the application did not properly sanitize user inputs, allowing an attacker to craft a malicious input to 
-manipulate SQL queries. 
-Evidence of Validation: 
-Navigate to the login page by clicking on the "log in"  In the username field, enter " ’ OR 1 = 1 -- " and in the password field, enter any 
-password.   
-This vulnerability can be exploited by an attacker to gain unauthorized access to the administrator account and potentially gain access 
-to sensitive information or perform malicious actions within the application. 
